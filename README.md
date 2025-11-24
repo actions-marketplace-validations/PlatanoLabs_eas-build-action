@@ -4,10 +4,10 @@ Super-speedy Expo builds on GitHub Actions, without needing to pay for EAS. Curr
 
 ## Performance
 
-| Runner | First Run | Second Run (cached) | Est. Cost (first) | Est. Cost (cached) |
-|--------|-----------|---------------------|-------------------|-------------------|
-| `macos-26` | TBD | TBD | TBD | TBD |
-| `macos-26-xlarge` | TBD | TBD | TBD | TBD |
+| Runner | First Run | Est. Cost (first) | Second Run (cached) | Est. Cost (cached) |
+|--------|-----------|-------------------|---------------------|-------------------|
+| `macos-26` | 23m 43s | $1.90 | **12m 10s** | **$0.97** |
+| `macos-26-xlarge` | 9m 1s | $1.44 | **5m 5s** | **$0.81** |
 
 > Based on $0.08/min for `macos-26` and $0.16/min for `macos-26-xlarge`
 
@@ -19,7 +19,7 @@ on: push
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: macos-26
     steps:
       - uses: actions/checkout@v4
       
