@@ -1,5 +1,5 @@
-name: "EAS Build and Submit"
-description: "Build and submit an EAS build."
+name: "eas-build-action"
+description: "Run a local EAS build."
 
 inputs:
   expo-token:
