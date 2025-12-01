@@ -1,4 +1,4 @@
-# PlatanoLabs/action-eas-build
+# PlatanoLabs/eas-build-action
 
 Super-speedy Expo builds on GitHub Actions, without needing to pay for EAS. Currently only optimized for iOS.
 
@@ -29,7 +29,7 @@ jobs:
       
       - run: npm install 
       
-      - uses: PlatanoLabs/action-eas-build@v0.1.0
+      - uses: PlatanoLabs/eas-build-action@v0.1.0
         id: build
         with:
           expo-token: ${{ secrets.EXPO_TOKEN }}
